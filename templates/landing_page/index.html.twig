@@ -1,0 +1,196 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LandingPageController!{% endblock %}
+
+{% block body %}
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                        <h1 class="text-uppercase text-white font-weight-bold">ENTRE VIRTUEL & REALITE</h1>
+                        <hr class="divider my-4" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 font-weight-light mb-5">Développement web & Multimedia</p>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section bg-primary" id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Nous avons ce qu'il vous faut !</h2>
+                        <hr class="divider light my-4" />
+                        <p class="text-white-50 mb-4">Travailler avec EVER, c'est commencer une collaboration sur un projet qui vous tiens à coeur. Nous mettons un point d'honneur à vous placer au coeur du projet & a toute les étapes de création de votre projet. Avec nous vous ne serez jamais laisser de coté. </p>
+                        <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">C'est parti !</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <h2 class="text-center mt-0">A Votre Service</h2>
+                <hr class="divider my-4" />
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+                            <h3 class="h4 mb-2">Développement web</h3>
+                            <p class="text-muted mb-0 text-justify">Nous créons pour vous des sites web (Vitrine, Blog/Vlog, E-Commerce) ainsi que des applications web complexe, que ce soit en intranet ou en embarqué. Et nous pouvons intervenir pour de l'optimisation, refonte & du dépannage web.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-mobile text-primary mb-4"></i>
+                            <h3 class="h4 mb-2">Application Mobile</h3>
+                            <p class="text-muted mb-0 text-justify">Nous réalisons également des applications mobile hybride (compatible 'Ios ou Android'). </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+                            <h3 class="h4 mb-2">Création de contenu</h3>
+                            <p class="text-muted mb-0 text-justify">Nous créons pour vous tout types de contenus multimédia pour vous mettre en valeurs ou vous permettre de proposer du contenu inédit pour vos abonnés que ce soit pour vos besoins en photo et vidéo ou encore pour des articles et des reportages pour vos différents supports. Nous pouvons nous déplacer partout dans l'Europe.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
+                            <h3 class="h4 mb-2">Conseil & Consulting</h3>
+                            <p class="text-muted mb-0 text-justify">Nous pouvons réaliser pour vous des analyses ou des expertises de votre entreprise ainsi que de vos différents supports marketing afin de vous aider à mettre en place ou d'optimiser au mieux votre stratégie digitale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to action-->
+        <section class="page-section bg-primary text-white"  id="portfolio">
+            <div class="container text-center">
+                <h2 class="mb-4">Quelques une de nos réalisations !</h2>
+            </div>
+            <!-- Portfolio-->
+        <div>
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="{{ asset('images/portfolio/fullsize/lodla.png' )}}">
+                            <img class="img-fluid" src="{{ asset('images/portfolio/thumbnails/lodla.png')}}" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Site d'une association</div>
+                                <div class="project-name">L'Ordre de L'Atlas</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="{{ asset('images/portfolio/fullsize/marineportage.jpg' )}}">
+                            <img class="img-fluid" src="{{ asset('images/portfolio/thumbnails/marineportage.jpg')}}" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Séance photos</div>
+                                <div class="project-name">Rêve & Cocon</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="{{ asset('images/portfolio/fullsize/ostara.png' )}}">
+                            <img class="img-fluid" src="{{ asset('images/portfolio/thumbnails/ostara.png')}}" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Site évementtiel</div>
+                                <div class="project-name">Fête d'Ostara</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="{{ asset('images/portfolio/fullsize/nordique-video.png' )}}">
+                            <img class="img-fluid" src="{{ asset('images/portfolio/thumbnails/nordique-video.png')}}" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Trailler Vidéo</div>
+                                <div class="project-name">Fête de Noël</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="{{ asset('images/portfolio/fullsize/ostara-video.png' )}}">
+                            <img class="img-fluid" src="{{ asset('images/portfolio/thumbnails/ostara-video.png')}}" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Trailer Vidéo</div>
+                                <div class="project-name">Fête d'Ostara</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="{{ asset('images/portfolio/fullsize/cinegoodies.png' )}}">
+                            <img class="img-fluid" src="{{ asset('images/portfolio/thumbnails/cinegoodies.png')}}" alt="" />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">Site E-Commerce</div>
+                                <div class="project-name">Cinegoodies</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container text-center">
+            <!-- présentation -->
+            <h2>Qui se trouve derrière EV3R:</h2>
+            <p>et oui il y a bien un homme derrière :</p>
+            <div class="align-items-center three col-sm-12 col-md-8" style="margin : auto">
+                <ul class="three">
+                    <li class="transition">
+                        <div class="wrapper"> <img class="transition sizePhoto" src="{{ asset('images/moi.jpg' )}}">
+                        <ul class="social">
+                            <li>Dynamique et passioné par le web. <br>
+                            Retrouvez moi sur :</li>
+                            <li class="transition"><a href="https://www.facebook.com/guillaume.ever"><i class="fab fa-2x fa-facebook"></i></a></li>
+                            <li class="transition"><a href="https://www.instagram.com/entre_virtuel_et_realite/?hl=fr"><i class="fab fa-2x fa-instagram"></i></a></li>
+                            <li class="transition"><a href="https://twitter.com/ever_france"><i class="fab fa-2x fa-twitter"></i></a></li>
+                            <li class="transition"><a href="https://www.linkedin.com/in/guillaume-ever/"><i class="fab fa-2x fa-linkedin"></i></a></li>
+                            <li class="transition"><a href="https://github.com/Entrevirtueletrealite"><i class="fab fa-2x fa-github"></i></a></li>
+                            <li class="transition"><a href="https://stackoverflow.com/users/12760704/ever"><i class="fab fa-2x fa-stack-overflow"></i></a></li>
+                        </ul>
+                        <span class="transition">
+                        <h3>Guillaume Biausque <em>Développeur & Fondateur</em></h3>
+                        <img class="mamber-img" src="{{ asset('images/moi.jpg' )}}">
+                        <h3>Guillaume Biausque</h3>
+                        <i>more</i> </span> </div>
+                    </li>
+                </ul>
+                <div class="text-justify" style="text-align: -webkit-center;">
+                    <p>Je m'appelle Guillaume, je suis le fondateur de l'entreprise EVER (Entre Virtuel Et Réalité), une toute jeune entreprise !<br></p>
+                    <p>Longtemps autodidacte, j'ai été formé en 2018/2019 par WF3 à Dijon. <br></p>
+                    <p>Ma passion : donner vie à vos projets en les concrétisant ! <br></p>
+                    <p>Je mets un point d'honneur à vous intégrer le plus intensément dans le projet et à être à votre écoute de notre première rencontre (en réelle ou virtuelle !) à la mise en ligne de votre site ou de votre application. <br></p>
+                    <p>N'hésitez pas à me contacter pour plus d'information <br>Dans l'attente de vous aider à concrétiser vos projets,</p> 
+                    <p><br>Guillaume de EVER</p>
+                </div>
+            </div>
+        </section>
+        <!-- fin présentation -->
+        <section class="contactSection">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mt-0">Pour prendre contact !</h2>
+                    <hr class="divider my-4" />
+                    <p class="text-muted-bg mb-5">Prêt pour travailler ensemble ? Besoin d'un devis, d'un conseil ? n'hésitez pas contactez-nous et nous vous réponderons dans les plus brefs délais !</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                    <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                    <div>+33 620 612 727</div>
+                </div>
+                <div class="col-lg-4 mr-auto text-center">
+                    <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                    <a class="d-block" href="contact@entrevirtueletrealite.com">contact@entrevirtueletrealite.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
